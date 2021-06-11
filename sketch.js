@@ -205,9 +205,8 @@ function reset(){
 }
 
 function Touch(){
-  if(touches.length > 0 && player.y  >= height-120) {
-      player.velocityY = -10;
-       touches = [];
+  if(touches.length > 0 && player.y  >= height-50) {
+          touches = [];
     }
 }
 
