@@ -207,7 +207,7 @@ function reset(){
 function Touch(){
   if(touches.length > 0 && player.y  = height-100) {
     touches.x = player.x;
-    player.y = height-100
+    
           touches = [];
     }
 }
