@@ -106,7 +106,7 @@ if (player.isTouching(trapGroup)){
        
      }
        
-     
+   touching(player);
      }
     
    } else if (gameState == 0){
@@ -206,7 +206,7 @@ function reset(){
 
 function Touch(){
   if(touches.length > 0 && player.y  = height-100) {
-    touches.x = player.x;
+  
     
           touches = [];
     }
@@ -222,3 +222,9 @@ function destroy2(player,treasure){
   gameState = 0;
 }
 
+
+function touching(player){
+  var x = player.touches[0].X;
+  player.x = x
+  console.log(x);
+}
